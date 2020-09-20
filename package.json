@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stasrdv/node.git"
+  },
+  "author": "Stas Rudevitsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stasrdv/node/issues"
+  },
+  "homepage": "https://github.com/stasrdv/node#readme",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mongoose": "^5.10.6"
+  },
+  "devDependencies": {
+    "handlebars": "^4.5.0",
+    "nodemon": "^2.0.4"
+  }
+}
