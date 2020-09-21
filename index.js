@@ -31,14 +31,11 @@ app.use(express.static(path.join(__dirname, "public")));
 
 async function start() {
   try {
-    await mongoose.connect(
-      // "mongodb+srv://stasrdvDB:8suLLyCUUu32jUdo@cluster0.ev8qe.mongodb.net/todos",
-      {
-        useNewUrlParser: true,
-        useFindAndModify: false,
-        useUnifiedTopology: true,
-      }
-    );
+    await mongoose.connect({
+      useNewUrlParser: true,
+      useFindAndModify: false,
+      useUnifiedTopology: true,
+    });
     app.listen(PORT, () => {
       console.log("Server has been started");
     });
